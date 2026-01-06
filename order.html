@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER PAGE</title>
+    <style>
+        #container{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+     
+        }
+        img{
+            height:200px;
+            width: 200px;
+           
+            margin-left: 30px;
+            border:2px solid gray;
+        }
+        .stk,#addtocart{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        textarea{
+            width:200px;
+            height:500px;
+            margin-left:40px;
+            font-size: larger;
+            text-transform: capitalize;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <div id="container">
+    <div>
+        <table>
+        <tr>
+            <td><img src="./images/watch.avif" alt="watch" onclick="add('watch')"><div class="stk"  id="watch" >Total stock=10</div></td>
+            <td><img src="./images/teddy1.avif" alt="teddy" onclick="add('teddy')"><div class="stk" id="teddy" >Total stock=10</div></td>
+            <td><img src="./images/airpods.jpeg" alt="airpods"  onclick="add('airpods')"><div class="stk"  id="airpods">Total stock=10</div></td>
+            <td><img src="./images/bangles.avif" alt="bangles" onclick="add('bangles')"><div class="stk"  id="bangles" >Total stock=10</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/scooty.jpeg" alt="scooty"  onclick="add('scooty')"><div class="stk" id="scooty" >Total stock=10</div></td>
+            <td><img src="./images/blackdress.avif" alt="dress" onclick="add('dress')"><div class="stk" id="dress" >Total stock=10</div></td>
+            <td><img src="./images/headphone.avif " alt="headphone" onclick="add('headphone')"><div class="stk" id="headphone">Total stock=10</div></td>
+            <td><img src="./images/phnbackcover.avif" alt="backcover" onclick="add('backcover')"><div class="stk" id="backcover">Total stock=10</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/lipstick.avif" alt="lipstick" onclick="add('lipstick')"><div class="stk" id="lipstick">Total stock=10</div></td>
+            <td><img src="./images/fridge.jpeg" alt="fridge" onclick="add('fridge')"><div class="stk" id="fridge">Total stock=10</div></td>
+            <td><img src="./images/shoe.avif" alt="shoe" onclick="add('shoe')"><div class="stk" id="shoe">Total stock=10</div></td>
+            <td><img src="./images/sofa.avif" alt="furniture" onclick="add('sofa')"><div class="stk" id="sofa" >Total stock=10</div></td>
+        </tr>
+            </table>
+    </div>
+
+    <div id="addtocart">
+        <h1>Items in your cart</h1>
+        <textarea></textarea>
+         <h2 id="tot">Total items=0</h2>
+
+    </div>
+    </div>
+    <script src="order.js"></script>
+</body>
+</html>

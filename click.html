@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLICK</title>
+    <style>
+        *{
+            top:0;
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-image: linear-gradient(lightblue,lightgreen);
+            height:650px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            margin-top: 20px;
+            padding:10px 30px;
+            background-color: bisque;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JUST CLICK THE IMAGE THAT YOU WANT TO BUY</h1>
+    <button onclick="next()">OK</button>
+    <script>
+        function next()
+        {
+            window.location.href="order.html"
+        }
+    </script>
+</body>
+</html>
